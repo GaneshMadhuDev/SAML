@@ -29,3 +29,12 @@ The browser sends the SAML response to Zagadat for verification.
 If the verification is successful, the user will be logged in to Zagadat and granted access to the resources that they are authorized to view/modify.
 
 
+SAML Process Flow diagram
+=========================
+
+ID: Newly generated number for identification
+IssueInstant: Timestamp to indicate the time it was generated
+AssertionConsumerServiceURL: The SAML URL interface of the service provider, where the Identity provider sends the authentication token.
+Issuer: The EntityID (unique identifier) of the service provider
+InResponseTo: The ID of the SAML request that this response belongs to
+Recipient: The EntityID (unique identifier) of the service provider
