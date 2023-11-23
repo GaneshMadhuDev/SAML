@@ -13,3 +13,19 @@ Benefits of SAML Authentication
 3. Loose Coupling of Directories — SAML doesn't require user information to be maintained and synchronized between directories.
 4. Reduced Costs for Service Providers — With SAML, you don't have to maintain account information across multiple services. The identity provider bears this burden.
 
+How does SAML Authentication Work?
+==================================
+
+1. SAML single sign-on authentication typically involves a service provider and an identity provider.
+2. The process flow usually involves the trust establishment and authentication flow stages.
+3. This is the process flow:
+=========================
+The user tries to log in to Zagadat from a browser.
+Zagadat responds by generating a SAML request.
+The browser redirects the user to an SSO URL, Auth0
+Auth0 parses the SAML request and authenticates the user. This could be with username and password or even social login. If the user is already authenticated on Auth0, this step will be skipped. Once the user is authenticated, Auth0 generates a SAML response.
+Auth0 returns the encoded SAML response to the browser.
+The browser sends the SAML response to Zagadat for verification.
+If the verification is successful, the user will be logged in to Zagadat and granted access to the resources that they are authorized to view/modify.
+
+
