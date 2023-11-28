@@ -61,3 +61,7 @@ Difference between JWT and SAML?
 Both SAML and JWT are security token formats that are not dependent on any programming language. SAML is the older format and is based on XML. It's used commonly in protocols like SAML-P, WS-Trust and WS-Federation (although not strictly required).
 JWT (JSON Web Token) tokens are based on JSON and used in new authentication and authorization protocols like OpenID Connect and OAuth 2.0.
 
+SAML Components?
+================
+SAML consists of three sets of components: assertions, protocols and bindings. Assertions -- the statements of identity, authentication and authorization information -- as well as protocol messages, are all XML-formatted using the SAML specification. SAML protocols define how different entities request and respond to requests for security information.
+
