@@ -39,12 +39,12 @@ Issuer: The EntityID (unique identifier) of the service provider
 InResponseTo: The ID of the SAML request that this response belongs to
 Recipient: The EntityID (unique identifier) of the service provider
 
-SAML Assertion?
+SAML Assertion
 ================
 A SAML Assertion is the XML document that the identity provider sends to the service provider that contains the user authorization. There are three different types of SAML Assertions - authentication, attribute, and authorization decision. Authentication assertions prove identification of the user and provide the time the user logged in and what method of authentication they used (I.e., Kerberos, 2 factor, etc.) The attribution assertion passes the SAML attributes to the service provider - SAML attributes are specific pieces of data that provide information about the user. An authorization decision assertion says if the user is authorized to use the service or if the identify provider denied their request due to a password failure or lack of rights to the service.
 
 
-Difference between OpenID and SAML?
+Difference between OpenID and SAML
 ===================================
 OpenID and SAML2 are both based on the same concept of federated identity. Following are some of the difference between them..
 SAML2 supports single sign-out - but OpenID does not
@@ -56,12 +56,26 @@ SAML2 can be either Service Provider (SP) initiated or Identity Provider (IdP) i
 SAML 2 is based on XML while OpenID is not.
 Most of the application developed in last 3 years were only supporting OpenID Connect. 92% of the 8B+ authentication requests Microsoft Azure AD handed in May 2018 were from OpenID Connect enabled applications.
 
-Difference between JWT and SAML?
+Difference between JWT and SAML
 ================================
 Both SAML and JWT are security token formats that are not dependent on any programming language. SAML is the older format and is based on XML. It's used commonly in protocols like SAML-P, WS-Trust and WS-Federation (although not strictly required).
 JWT (JSON Web Token) tokens are based on JSON and used in new authentication and authorization protocols like OpenID Connect and OAuth 2.0.
 
-SAML Components?
+SAML Components
 ================
 SAML consists of three sets of components: assertions, protocols and bindings. Assertions -- the statements of identity, authentication and authorization information -- as well as protocol messages, are all XML-formatted using the SAML specification. SAML protocols define how different entities request and respond to requests for security information.
+
+Authentication in SAML
+------------------------
+Authentication validates the identity of the user, whether the user is valid or not.
+
+Authorization in SAML
+----------------------
+Authorization determines whether user have specific permission or not, once the authentication is successful.
+
+Identity Provider
+-----------------
+It does authentication and passes the user's identity and authorization level to the service provider.
+
+
 
