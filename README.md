@@ -55,3 +55,9 @@ SAML2 has different bindings while the only binding OpenID has is HTTP
 SAML2 can be either Service Provider (SP) initiated or Identity Provider (IdP) initiated. But OpenID always SP initiated.
 SAML 2 is based on XML while OpenID is not.
 Most of the application developed in last 3 years were only supporting OpenID Connect. 92% of the 8B+ authentication requests Microsoft Azure AD handed in May 2018 were from OpenID Connect enabled applications.
+
+Difference between JWT and SAML?
+================================
+Both SAML and JWT are security token formats that are not dependent on any programming language. SAML is the older format and is based on XML. It's used commonly in protocols like SAML-P, WS-Trust and WS-Federation (although not strictly required).
+JWT (JSON Web Token) tokens are based on JSON and used in new authentication and authorization protocols like OpenID Connect and OAuth 2.0.
+
