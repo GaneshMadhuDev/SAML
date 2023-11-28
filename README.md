@@ -42,3 +42,16 @@ Recipient: The EntityID (unique identifier) of the service provider
 SAML Assertion?
 ================
 A SAML Assertion is the XML document that the identity provider sends to the service provider that contains the user authorization. There are three different types of SAML Assertions - authentication, attribute, and authorization decision. Authentication assertions prove identification of the user and provide the time the user logged in and what method of authentication they used (I.e., Kerberos, 2 factor, etc.) The attribution assertion passes the SAML attributes to the service provider - SAML attributes are specific pieces of data that provide information about the user. An authorization decision assertion says if the user is authorized to use the service or if the identify provider denied their request due to a password failure or lack of rights to the service.
+
+
+Difference between OpenID and SAML?
+===================================
+OpenID and SAML2 are both based on the same concept of federated identity. Following are some of the difference between them..
+SAML2 supports single sign-out - but OpenID does not
+
+SAML2 service providers are coupled with the SAML2 Identity Providers, but OpenID relying parties are not coupled with OpenID Providers. OpenID has a discovery protocol which dynamically discovers the corresponding OpenID Provider, once an OpenID is given. SAML has a discovery protocol based on Identity Provider Discovery Service Protocol.
+With SAML2, the user is coupled to the SAML2 IdP - your SAML2 identifier is only valid for the SAML2 IdP who issued it. But with OpenID, you own your identifier and you can map it to any OpenID Provider you wish.
+SAML2 has different bindings while the only binding OpenID has is HTTP
+SAML2 can be either Service Provider (SP) initiated or Identity Provider (IdP) initiated. But OpenID always SP initiated.
+SAML 2 is based on XML while OpenID is not.
+Most of the application developed in last 3 years were only supporting OpenID Connect. 92% of the 8B+ authentication requests Microsoft Azure AD handed in May 2018 were from OpenID Connect enabled applications.
