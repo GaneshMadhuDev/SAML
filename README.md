@@ -77,5 +77,14 @@ Identity Provider
 -----------------
 It does authentication and passes the user's identity and authorization level to the service provider.
 
+SAML Service Provider
+---------------------
+SAML service provider is a service that receives and accepts authentication in combination with a single sign-on profile of the Security Assertion Markup Language (SAML).
 
+Single Sign-On
+--------------
+Single sign-on ( SSO) is an authentication process that allows users to securely authenticate several applications and websites using only one set of credentials.
 
+SAML uses Single-Sign On (SSO)
+-------------------------------
+SAML enables Single-Sign On (SSO), which implies that users can log in once, and same credentials can be re-used to log in to other service providers.
