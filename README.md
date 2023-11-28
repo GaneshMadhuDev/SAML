@@ -38,3 +38,7 @@ AssertionConsumerServiceURL: The SAML URL interface of the service provider, whe
 Issuer: The EntityID (unique identifier) of the service provider
 InResponseTo: The ID of the SAML request that this response belongs to
 Recipient: The EntityID (unique identifier) of the service provider
+
+SAML Assertion?
+================
+A SAML Assertion is the XML document that the identity provider sends to the service provider that contains the user authorization. There are three different types of SAML Assertions - authentication, attribute, and authorization decision. Authentication assertions prove identification of the user and provide the time the user logged in and what method of authentication they used (I.e., Kerberos, 2 factor, etc.) The attribution assertion passes the SAML attributes to the service provider - SAML attributes are specific pieces of data that provide information about the user. An authorization decision assertion says if the user is authorized to use the service or if the identify provider denied their request due to a password failure or lack of rights to the service.
