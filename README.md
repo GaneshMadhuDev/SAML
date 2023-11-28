@@ -88,3 +88,18 @@ Single sign-on ( SSO) is an authentication process that allows users to securely
 SAML uses Single-Sign On (SSO)
 -------------------------------
 SAML enables Single-Sign On (SSO), which implies that users can log in once, and same credentials can be re-used to log in to other service providers.
+
+How Does SAML Work?
+-------------------
+SAML works by exchanging information about user's logins information, and attributes between the identity provider and service providers.
+
+Each user logs in once to Single Sign On with the identify provider.
+then the identify provider can pass SAML attributes to the service provider when the user attempts to access those services.
+The service provider requests the authorization and authentication from the identify provider.
+if the verification is successful, the user will be logged in.
+
+Difference between SAML and OAuth?
+----------------------------------
+SAML provides enterprises with more control to keep their SSO logins safer, while OAuth is better on mobile which uses JSON.
+OAuth uses a similar approach as SAML to exchange login information.
+OAuth is a slightly more recent standard that has been co-developed by Google and Twitter to allow seamless internet login.
